@@ -7,12 +7,12 @@ import jakarta.persistence.*;
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String nombre;
     private String descripcion;
     private String imagen;
     private double precio;
-    private int cantidad;
+    private Integer cantidad;
 
     @ManyToOne
     private Usuario usuario;
@@ -31,7 +31,7 @@ public class Producto {
         this.usuario = usuario;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -71,7 +71,7 @@ public class Producto {
         this.precio = precio;
     }
 
-    public int getCantidad() {
+    public Integer getCantidad() {
         return cantidad;
     }
 

@@ -1,4 +1,6 @@
 package com.curso.ecommerce.model;
+import com.curso.ecommerce.model.Usuario;
+
 
 import jakarta.persistence.*;
 
